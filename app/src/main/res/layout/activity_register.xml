@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="70dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/regist_head"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="centerCrop"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:riv_border_color="#FFFFFF"
+            app:riv_border_width="2dp"
+            app:riv_corner_radius="20dp"
+            app:riv_oval="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_regist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="center"
+            android:maxLines="1"
+            android:hint="请输入用户名" />
+
+        <EditText
+            android:id="@+id/et_regist_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="请输入密码"
+            android:maxLines="1"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/et_regist_repwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="请确认密码"
+            android:maxLines="1"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/et_regist_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="center"
+            android:maxLines="1"
+            android:hint="请输入电话号码"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/et_regist_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="请输入邮箱"
+            android:maxLines="1"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/button_regist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="注册" />
+    </LinearLayout>
+
+</LinearLayout>
